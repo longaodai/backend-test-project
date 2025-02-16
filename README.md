@@ -46,4 +46,4 @@ php artisan db:seed
 ## View project: 
 - Web: http://localhost:8080
 - Phpmyadmin: http://localhost:8081
-- Default account: admin@gmail.com / assword
+- Default account: admin@gmail.com / password
