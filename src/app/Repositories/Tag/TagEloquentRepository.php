@@ -20,6 +20,10 @@ class TagEloquentRepository extends BaseRepository implements TagRepositoryInter
         return Tag::class;
     }
 
+    /**
+     * @param mixed $data
+     * @param mixed $options
+     */
     public function update($data = null, $options = null)
     {
         $this->resetModel();

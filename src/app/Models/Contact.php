@@ -16,16 +16,10 @@ class Contact extends Model
         'name',
         'email',
         'phone',
-        'user_id',
     ];
 
     public function tags(): BelongsToMany
     {
         return $this->belongsToMany(Tag::class, 'contact_tag');
-    }
-
-    public function user(): BelongsTo
-    {
-        return $this->belongsTo(User::class)->withDefault();
     }
 }

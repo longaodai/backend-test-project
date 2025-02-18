@@ -6,9 +6,11 @@ use Illuminate\Support\ServiceProvider;
 
 use App\Repositories\User\UserRepositoryInterface;
 use App\Repositories\Tag\TagRepositoryInterface;
+use App\Repositories\Contact\ContactRepositoryInterface;
 #InterfaceNamespace
 use App\Repositories\User\UserEloquentRepository;
 use App\Repositories\Tag\TagEloquentRepository;
+use App\Repositories\Contact\ContactEloquentRepository;
 #ClassNamespace
 
 /**
@@ -44,6 +46,7 @@ class RepositoryServiceProvider extends ServiceProvider
     {
         $this->app->singleton(UserRepositoryInterface::class, UserEloquentRepository::class);
 		$this->app->singleton(TagRepositoryInterface::class, TagEloquentRepository::class);
+		$this->app->singleton(ContactRepositoryInterface::class, ContactEloquentRepository::class);
 		#Singleton
     }
 
@@ -57,6 +60,7 @@ class RepositoryServiceProvider extends ServiceProvider
         return [
             UserRepositoryInterface::class,
 			TagRepositoryInterface::class,
+			ContactRepositoryInterface::class,
 			#InterfaceProvides
         ];
     }

@@ -47,3 +47,4 @@ php artisan db:seed
 - Web: http://localhost:8080
 - Phpmyadmin: http://localhost:8081
 - Default account: admin@gmail.com / password
+- Postman document: https://documenter.getpostman.com/view/18276983/2sAYXEEyLj
